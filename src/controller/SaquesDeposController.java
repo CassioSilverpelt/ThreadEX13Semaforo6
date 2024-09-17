@@ -7,8 +7,8 @@ public class SaquesDeposController extends Thread {
 	Semaphore saque;
 	Semaphore deposito;
 	int iD = (int)threadId();
-	int dep = 0;
-	int saq = 0;
+	static int dep = 0;
+	static int saq = 0;
 	int trans;
 	
 	public SaquesDeposController(Semaphore saque, Semaphore deposito, int trans) {
